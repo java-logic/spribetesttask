@@ -12,7 +12,6 @@ public class CreatePlayerRequest {
     private String role;
     private String screenName;
 
-    // Геттери та сеттери
     public Role getEditor() {
         return editor;
     }
@@ -69,7 +68,6 @@ public class CreatePlayerRequest {
         this.screenName = screenName;
     }
 
-    // ======= Builder =======
     public static Builder builder() {
         return new Builder();
     }

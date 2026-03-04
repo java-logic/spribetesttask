@@ -10,8 +10,6 @@ public class CreatePlayerResponse {
     private String role;
     private String screenName;
 
-    // ===== getters =====
-
     public Integer getAge() {
         return age;
     }

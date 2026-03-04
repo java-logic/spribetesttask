@@ -6,7 +6,6 @@ public class GetAllPlayersResponse {
 
     private List<PlayerDto> players;
 
-    // --- Геттери та сеттери ---
     public List<PlayerDto> getPlayers() {
         return players;
     }

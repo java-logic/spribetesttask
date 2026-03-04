@@ -4,11 +4,10 @@ import java.util.Map;
 
 public class DeletePlayerResponse {
 
-    private Map<String, Object> body;  // пустий об'єкт у JSON може бути Map
+    private Map<String, Object> body;
     private String statusCode;
-    private int statusCodeValue;
+    private Integer statusCodeValue;
 
-    // --- Геттери та сеттери ---
     public Map<String, Object> getBody() {
         return body;
     }
@@ -25,11 +24,11 @@ public class DeletePlayerResponse {
         this.statusCode = statusCode;
     }
 
-    public int getStatusCodeValue() {
+    public Integer getStatusCodeValue() {
         return statusCodeValue;
     }
 
-    public void setStatusCodeValue(int statusCodeValue) {
+    public void setStatusCodeValue(Integer statusCodeValue) {
         this.statusCodeValue = statusCodeValue;
     }
 }

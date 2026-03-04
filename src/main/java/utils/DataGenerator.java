@@ -1,6 +1,8 @@
 package utils;
 
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class DataGenerator {
 
@@ -8,11 +10,9 @@ public class DataGenerator {
     private static final Random random = new Random();
 
     public static String randomString(int length) {
-        StringBuilder sb = new StringBuilder();
-        for(int i=0; i<length; i++) {
-            sb.append(ALPHANUM.charAt(random.nextInt(ALPHANUM.length())));
-        }
-        return sb.toString();
+        return IntStream.range(0, length)
+                .mapToObj(i -> String.valueOf(ALPHANUM.charAt(random.nextInt(ALPHANUM.length()))))
+                .collect(Collectors.joining());
     }
 
     public static int randomAge() {

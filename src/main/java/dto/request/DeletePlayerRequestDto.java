@@ -3,8 +3,13 @@ package dto.request;
 public class DeletePlayerRequestDto {
     private Integer playerId;
 
-    public Integer getPlayerId() { return playerId; }
-    public void setPlayerId(Integer playerId) { this.playerId = playerId; }
+    public Integer getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(Integer playerId) {
+        this.playerId = playerId;
+    }
 
     public static Builder builder() {
         return new Builder();

@@ -22,8 +22,4 @@ public class Config {
     public static String getBaseUrl() {
         return PROPS.getProperty("baseUrl");
     }
-
-    public static int getThreadCount() {
-        return Integer.parseInt(PROPS.getProperty("threadCount", "3"));
-    }
 }

@@ -1,6 +1,7 @@
 package models;
 
 import io.restassured.response.Response;
+
 import java.util.Map;
 
 public class ApiResponse<T> {
@@ -19,9 +20,23 @@ public class ApiResponse<T> {
         this.rawResponse = rawResponse;
     }
 
-    public int getStatusCode() { return statusCode; }
-    public String getStatusLine() { return statusLine; }
-    public Map<String, String> getHeaders() { return headers; }
-    public T getData() { return data; }
-    public Response getRawResponse() { return rawResponse; }
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    public String getStatusLine() {
+        return statusLine;
+    }
+
+    public Map<String, String> getHeaders() {
+        return headers;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public Response getRawResponse() {
+        return rawResponse;
+    }
 }

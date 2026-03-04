@@ -1,32 +1,67 @@
 package dto.response;
 
 public class GetPlayerResponse {
-    private int age;
+    private Integer age;
     private String gender;
-    private int id;
+    private Integer id;
     private String login;
     private String password;
     private String role;
     private String screenName;
 
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
+    public Integer getAge() {
+        return age;
+    }
 
-    public String getGender() { return gender; }
-    public void setGender(String gender) { this.gender = gender; }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public String getGender() {
+        return gender;
+    }
 
-    public String getLogin() { return login; }
-    public void setLogin(String login) { this.login = login; }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
+    public Integer getId() {
+        return id;
+    }
 
-    public String getRole() { return role; }
-    public void setRole(String role) { this.role = role; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    public String getScreenName() { return screenName; }
-    public void setScreenName(String screenName) { this.screenName = screenName; }
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getScreenName() {
+        return screenName;
+    }
+
+    public void setScreenName(String screenName) {
+        this.screenName = screenName;
+    }
 }
